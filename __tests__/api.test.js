@@ -14,7 +14,7 @@ describe('GET /api/data/new', () => {
       const response = await request(app).get('/api/data/new');
       expect(response.status).toBe(200); // Check for 200 status
       expect(response.body).toHaveProperty('message');
-      expect(response.body.message).toBe('Hello from the newGetApi!');
+      expect(response.body.message).toBe('Hello from the newGetApi!') ;
     });
   });
   
